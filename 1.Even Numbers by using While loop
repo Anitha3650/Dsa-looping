@@ -1,0 +1,42 @@
+Task details
+
+Write a program using only while loops to print all the even numbers from 1 to n
+
+Input
+
+if n = 10
+
+Output
+
+2
+
+4
+
+6
+
+8
+
+10
+import java.util.*;
+public class Main
+{
+   
+    public static void print_even(int n)
+    {
+         /*Print all even numbers from 1 to n*/
+
+        int i = 2;
+         while(i<=n){
+            System.out.println(i);
+            i+=2;
+         }
+             
+    }
+     public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n =sc.nextInt();
+        
+        print_even(n);
+    }
+}
