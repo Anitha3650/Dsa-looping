@@ -1,0 +1,31 @@
+Write a program to print all the numbers from 1 to n.
+If m is present in between the sequence then stop printing any other number and break out of the loop.
+
+Input :-
+n = 10 m = 4
+Output :-
+1
+2
+3
+-------------------------------------------------------------------------------------------------------
+import java.util.*;
+public class Main
+{
+   
+    public static void print_series(int n, int m)
+    {
+        for(int i=1;i<=n;i++){
+             if(i==m){
+                 break;
+             }
+             System.out.println(i);
+        }
+     }
+     public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n = sc.nextInt();
+        int m = sc.nextInt();
+        print_series(n,m);
+    }
+}
