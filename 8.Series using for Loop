@@ -1,0 +1,36 @@
+Print the following series using for loop:-
+1,8,27,64,125,216,......n
+
+Input
+125
+Output :-
+1
+8
+27
+64
+125
+-----------------------------------------------------
+import java.util.*;
+public class Main
+{
+   
+    public static void print_series(int n)
+    {
+         /* Print the following series 
+            1 8 27 64 125 to n (including) . Note print all the numbers in a seperate line*/
+            
+         int x =1;
+         for(int i=1;x<=n;i++){
+             System.out.println(x);
+             x = (i+1)*(i+1)*(i+1);
+         }
+         
+     }
+     public static void main(String[]args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n =sc.nextInt();
+        
+        print_series(n);
+    }
+}
